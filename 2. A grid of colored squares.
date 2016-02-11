@@ -8,20 +8,18 @@ void setup() {
   stroke(0);
   
   rectMode(CENTER);
- 
-}
-
-void draw() {
-    fill(random(255),random(255),random(255));
 
       //change the x coordinate
   for(int i=0; i<25; i++) { //start,stop, step
     // change the y coordniate
     for(int j=0;j<25;j++) {
-      if (random(7) > 2) {
+         fill(random(255),random(255),random(255));
+
         rect(border+(i*20),border+(j*20),hi,hi); // x coord, y coord, width, height
   
       }
-    }
+    
   }
+ 
 }
+
