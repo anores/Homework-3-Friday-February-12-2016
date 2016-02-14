@@ -1,1 +1,59 @@
 
+int border = 20;
+
+void setup() {
+  size (700,700);
+  background (255);
+  //stroke (0);
+  strokeWeight (1.2);
+
+  
+}
+
+  void draw(){
+//int a;
+
+  // x coordinate 
+  for (int i=0; i<25; i++) { //start,stop,step
+    int x = (i*34);
+
+      //y coordinate
+      for (int j=0; j<25; j++) {
+        int y = (j*34);
+       
+        stroke (0);
+
+        //line (50, 100, 10, 10); //line(x1, y1, x2, y2) 
+        line(x+10+border, y+border, x+10+border, y+20+border); 
+        line(x+border, y+10+border, x+20+border, y+10+border);
+      
+//      }
+//   }
+// }
+ 
+  // x coordinate 
+  for (int f=0; f<25; f++) { //start,stop,step
+    int a = (f*34);
+
+      //y coordinate
+      for (int g=0; g<25; g++) {
+        int b = (g*34);
+       
+
+       // stroke (250);
+
+        //line (50, 100, 10, 10); //line(x1, y1, x2, y2) 
+        line(a+10+border, y+border, x+10+border, y+20+border); 
+        line(x+border, y+10+border, x+20+border, y+10+border);
+        
+        
+         }
+       }
+     }    
+   }  
+ }
+ 
+//First, I tried running everyhing without a draw function, then I realized I needed it for it
+//to be called over and over again.
+//Duplicated the lines to change the color to white to hide them when they blink 
+//Applied the random function, first outside of the lines, then inside of the lines.  Didn't work.
